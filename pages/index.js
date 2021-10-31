@@ -11,8 +11,8 @@ import classNames from "classnames";
 export default function Home({ allPostsData }) {
   return (
     <Layout className={layoutStyles.mainBorder} home>
-      <section className="flex justify-between">
-          <div className="w-1/2">
+      <section className="flex justify-between sm:flex-col-reverse md:flex-row">
+          <div className="md:w-1/2">
               <h2 className="font-bold text-4xl my-5 secondColor">Latest added</h2>
               <ul className={utilStyles.list}>
                   {allPostsData.map(({ id, date, title }) => (
@@ -30,9 +30,9 @@ export default function Home({ allPostsData }) {
                   ))}
               </ul>
           </div>
-          <div className="w-1/2 ml-4 flex flex-col items-end">
+          <div className="md:w-1/2 flex flex-col sm:items-start md:items-end">
               <h2 className="font-bold text-4xl my-5 secondColor">Categories</h2>
-              <div className="flex justify-end flex-wrap">
+              <div className="flex sm:justify-start md:justify-end flex-wrap">
                   <CategoryButton className="mr-3 mt-4" text={`Category`} />
                   <CategoryButton className="mr-3 mt-4" text={`Category`} />
                   <CategoryButton className="mr-3 mt-4" text={`Category`} />
