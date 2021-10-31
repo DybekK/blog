@@ -27,21 +27,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 50px;
 }
 
-/*.textBorder {*/
-/*  position: relative;*/
-/*}*/
+.textBorder {
+  position: relative;
+}
 
-/*.textBorder:before {*/
-/*  content: "";*/
-/*  height: 150%;*/
-/*  margin-top: -60px;*/
-/*  position: absolute;*/
-/*  width: 110vw;*/
-/*  background-color: #130a6a;*/
-/*  z-index: -1;*/
-/*  top: -0;*/
-/*  left: -80vw;*/
-/*}*/
+.textBorder:before {
+  content: "";
+  height: 175%;
+  margin-top: -60px;
+  position: absolute;
+  width: 130vw;
+  background-color: #130a6a;
+  z-index: -1;
+  top: -0;
+  left: -80vw;
+}
 
 a {
   color: #0070f3;

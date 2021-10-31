@@ -1,4 +1,4 @@
-import Button from "../buttons/button";
+import {AnimatedVariantButton} from "../buttons/animatedVariantButton";
 
 export default function Header() {
     return (
@@ -7,8 +7,8 @@ export default function Header() {
                 My blog
             </h1>
             <div>
-                <Button text="About me" className="mr-2" />
-                <Button text="FAQ" className="ml-2" />
+                <AnimatedVariantButton variant="blue"  text="About me" className="mr-2" />
+                <AnimatedVariantButton variant="blue" text="FAQ" className="ml-2" />
             </div>
         </div>
     )

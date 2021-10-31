@@ -1,24 +1,21 @@
 .button {
-   font-size: 11px;
-   font-weight: 200;
-   letter-spacing: 1px;
-   padding: 11px 18px;
-   outline: 0;
-   border: 1px solid #faa9bd;
-   cursor: pointer;
-    color: white;
-   position: relative;
-   background-color: transparent;
-   user-select: none;
-   -webkit-user-select: none;
-   touch-action: manipulation;
+    font-size: 11px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 11px 18px;
+    outline: 0;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .button:after {
     content: "";
-    background-color: #130a6a;
     width: 100%;
-    z-index: -100;
+    z-index: -1;
     position: absolute;
     height: 100%;
     top: 5px;
@@ -26,7 +23,49 @@
     transition: 0.2s;
 }
 
+.button:before {
+    content: "";
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s;
+}
+
+.button:hover:before {
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+}
+
+
 .button:hover:after {
     top: 0;
     left: 0;
+    transition: 0.2s;
+}
+
+.button_blue {
+    color: white;
+}
+
+.button_pink {
+    color: black;
+}
+
+.button_blue:before {
+   border: 1px solid #faa9bd;
+}
+
+.button_pink:before {
+    border: 1px solid white;
+}
+
+.button_blue:after {
+    background-color: #130a6a;
+}
+
+.button_pink:after {
+    background-color: #faa9bd;
 }

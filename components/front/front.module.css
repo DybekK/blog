@@ -1,7 +1,26 @@
 .front {
     width: 100vw;
-    height: 500px;
+    height: 100vh;
     background-color: #10059F;
     position: relative;
     z-index: 1;
+}
+
+.frontBorder {
+    border-left: 1px solid rgb(55, 48, 163);
+    border-right: 1px solid rgb(55, 48, 163);
+    position: relative;
+}
+
+.frontBorder:before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 1px;
+    border-left: 1px solid rgb(55, 48, 163);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
