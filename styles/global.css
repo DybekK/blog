@@ -6,6 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 * {
@@ -22,11 +23,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 30px;
 }
 
-.header1 {
-  font-weight: bold;
-  font-size: 50px;
-}
-
 .textBorder {
   position: relative;
 }
@@ -36,11 +32,37 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   height: 175%;
   margin-top: -60px;
   position: absolute;
-  width: 130vw;
+  width: 120vw;
   background-color: #130a6a;
   z-index: -1;
   top: -0;
   left: -80vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .textBorder:before {
+    height: 240%;
+  }
+}
+
+@media only screen and (max-width: 657px) {
+  .textBorder:before {
+    height: 200%;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .textBorder:before {
+    height: 480%;
+    width: 140vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .textBorder:before {
+    height: 320%;
+    width: 140vw;
+  }
 }
 
 a {

@@ -12,7 +12,7 @@ export default function Front() {
                 <div className="mb-40">
                     <p data-aos="fade-right" style={{color: "#faa9bd"}}>Home</p>
                     <div className="textBorder">
-                        <h1 data-aos="fade-right" className="header1 text-white z-10 relative mb-7">
+                        <h1 data-aos="fade-right" className="font-bold sm:w-3/4 md:w-3/5 lg:w-full md:leading-snug sm:leading-snug lg:leading-snug sm:text-3xl md:text-4xl lg:text-5xl text-white z-10 relative mb-7">
                             Hey, my name is Mateusz and I work as a Software Engineer, it's my job and passion
                         </h1>
                     </div>
