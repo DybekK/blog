@@ -1,0 +1,7 @@
+.front {
+    width: 100vw;
+    height: 500px;
+    background-color: #10059F;
+    position: relative;
+    z-index: 1;
+}

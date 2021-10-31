@@ -50,3 +50,15 @@
 .lightText {
   color: #666;
 }
+
+.fluid {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.doubleButton {
+  border: 0;
+  background-color: white;
+  padding: 8px;
+}
+
