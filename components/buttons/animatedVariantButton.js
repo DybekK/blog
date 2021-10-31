@@ -1,7 +1,5 @@
 import buttonStyles from './button.module.css';
 import classNames from "classnames";
-import {useEffect} from "react";
-import AOS from "aos";
 
 export function AnimatedVariantButton({className, variant, fontSize = 11, dataAos, text}) {
     const variantStyles = variant === 'blue' ?  buttonStyles.button_blue : buttonStyles.button_pink;

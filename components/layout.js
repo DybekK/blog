@@ -4,13 +4,14 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Front from "./front/front";
+import classNames from "classnames";
 
 const name = '[Your Name]'
 export const siteTitle = 'Next.js Sample Website'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, className }) {
   return (
-    <div className={styles.container}>
+    <div className={classNames(styles.container, className)}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta

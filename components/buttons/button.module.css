@@ -6,6 +6,7 @@
     outline: 0;
     cursor: pointer;
     position: relative;
+    height: fit-content;
     background-color: transparent;
     user-select: none;
     -webkit-user-select: none;
@@ -68,4 +69,9 @@
 
 .button_pink:after {
     background-color: #faa9bd;
+}
+
+.categoryButton {
+    border: 1px solid #130a6a;
+    color: #130a6a;
 }
