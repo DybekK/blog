@@ -1,8 +1,8 @@
 import {AnimatedVariantButton} from "../buttons/animatedVariantButton";
 
-export default function Header() {
+export default function Header({dataAos}) {
     return (
-        <div className={"mt-7 flex justify-between items-center"}>
+        <div data-aos={dataAos} className={"mt-7 flex justify-between items-center"}>
             <h1 className="text-white header2">
                 My blog
             </h1>
