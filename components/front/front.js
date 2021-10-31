@@ -10,7 +10,7 @@ export default function Front() {
                 <Header />
                 <div>
                     <p style={{color: "#faa9bd"}}>Home</p>
-                    <h1 className="header1 text-white mb-7">
+                    <h1 className="header1 textBorder text-white mb-7">
                         Hey, my name is Mateusz and I work as a Software Engineer, it's my job and passion
                     </h1>
                 </div>

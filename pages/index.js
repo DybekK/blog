@@ -9,7 +9,7 @@ import Front from '../components/front/front'
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
