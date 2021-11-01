@@ -9,7 +9,7 @@ export default function Front() {
         <div className={frontStyles.front}>
             <div className={classNames(layoutStyles.container, frontStyles.frontBorder, "flex flex-col h-full justify-between")}>
                 <Header dataAos="fade-down" />
-                <div className="mb-40">
+                <div className="mb-40 z-10 relative">
                     <p data-aos="fade-right" style={{color: "#faa9bd"}}>Home</p>
                     <div className="textBorder">
                         <h1 data-aos="fade-right" className="font-bold sm:w-3/4 md:w-3/5 lg:w-full md:leading-snug sm:leading-snug lg:leading-snug sm:text-3xl md:text-4xl lg:text-5xl text-white z-10 relative mb-7">
