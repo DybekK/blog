@@ -21,18 +21,6 @@
   position: relative;
 }
 
-.mainBorder:before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  border-right: 1px solid rgb(236, 236, 236);
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 @media only screen and (max-width: 768px) {
   .mainBorder:before {
     content: none;

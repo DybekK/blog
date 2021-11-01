@@ -6,7 +6,9 @@ import "aos/dist/aos.css";
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true
+    });
     // AOS.refresh();
   }, []);
 

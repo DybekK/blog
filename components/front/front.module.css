@@ -15,10 +15,23 @@
 .frontBorder:before {
     content: "";
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 1px;
     border-left: 1px solid rgb(55, 48, 163);
     left: 0;
+    right: 35%;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frontBorder:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    border-left: 1px solid rgb(55, 48, 163);
+    left: 35%;
     right: 0;
     z-index: 1;
     margin-left: auto;
