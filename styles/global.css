@@ -44,6 +44,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   left: -80vw;
 }
 
+.textBorder-short {
+  position: relative;
+}
+
+.textBorder-short:before {
+  content: "";
+  height: 175%;
+  margin-top: -40px;
+  position: absolute;
+  width: 100%;
+  background-color: #130a6a;
+  z-index: -1;
+  left: 100px;
+}
+
 @media only screen and (max-width: 767px) {
   .textBorder:before {
     height: 240%;

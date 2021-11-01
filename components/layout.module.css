@@ -38,3 +38,11 @@
     content: none;
   }
 }
+
+.footer {
+  background-color: #10059F;
+  height: 400px;
+  width: 100%;
+  z-index: 50;
+  position: relative;
+}

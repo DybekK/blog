@@ -55,6 +55,10 @@
     color: black;
 }
 
+.button_black {
+
+}
+
 .button_blue:before {
    border: 1px solid #faa9bd;
 }
@@ -63,11 +67,19 @@
     border: 1px solid white;
 }
 
+.button_black:before {
+    border: 1px solid black;
+}
+
 .button_blue:after {
     background-color: #130a6a;
 }
 
 .button_pink:after {
+    background-color: #faa9bd;
+}
+
+.button_black:after {
     background-color: #faa9bd;
 }
 
