@@ -34,7 +34,7 @@ export default function Layout({ children, home, className, postData }) {
               </header>
               <main>{children}</main>
               {!home && (
-                  <div className={styles.backToHome}>
+                  <div className="pb-7">
                       <Link href="/">
                           <a>← Back to home</a>
                       </Link>
