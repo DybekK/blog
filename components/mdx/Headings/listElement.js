@@ -1,3 +1,3 @@
-// export function ListElement() {
-//     return <li />
-// }
+export function ListElement({children}) {
+    return <li className="leading-loose">{children}</li>
+}

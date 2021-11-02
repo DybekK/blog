@@ -9,11 +9,15 @@ import { MDXRemote } from 'next-mdx-remote'
 import {Heading} from "../../components/mdx/Headings/heading";
 import {Paragraph} from "../../components/mdx/Headings/paragraph";
 import {List} from "../../components/mdx/Headings/list";
+import {ListElement} from "../../components/mdx/Headings/listElement";
+import {Code} from "../../components/mdx/Headings/code";
 
 const components = {
-  h1: (props) => <Heading {...props} variant="h3" />,
+  h1: (props) => <Heading {...props} variant="h1" />,
   p: (props) => <Paragraph {...props} />,
-  ul: (props) => <List {...props} />
+  ul: (props) => <List {...props} />,
+  li: (props) => <ListElement {...props} />,
+  code: (props) => <Code {...props} />
 }
 
 export default function Post({ postData }) {
