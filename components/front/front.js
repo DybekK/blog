@@ -21,7 +21,7 @@ export default function Front({home, postData}) {
                             {title}
                         </h1>
                     </div>
-                    {!home && postData?.categories?.map(category => <AnimatedVariantButton className="z-10 relative mr-4" variant="pink" fontSize="13px" padding="9px 17px" text={`#${category}`} />)}
+                    {!home && postData?.categories?.map(category => <AnimatedVariantButton className="z-10 relative mr-4" variant="pink" fontSize="13px" padding="9px 17px" text={`#${category.toLowerCase()}`} />)}
                     {home && <AnimatedVariantButton
                         dataAos="fade-right"
                         variant="pink"
