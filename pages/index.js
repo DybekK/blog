@@ -12,7 +12,7 @@ export default function Home({ allPostsData }) {
       <Layout className={layoutStyles.mainBorder} home>
           <section className="flex justify-between flex-col-reverse sm:flex-col-reverse md:flex-row">
               <div className="w-full md:w-1/2">
-                  <h2 data-aos="fade-down" className="font-bold text-4xl my-5 secondColor">Latest added</h2>
+                  <h2 data-aos="fade-down" className="font-bold text-4xl mb-5 secondColor">Latest added</h2>
                   <ul className={utilStyles.list}>
                       {allPostsData.map(({ id, date, title, categories }) => (
                           <li data-aos="fade-down" className="mb-8" key={id}>
@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
                   </ul>
               </div>
               <div className="w-full md:w-2/5 flex flex-col items-start sm:items-start md:items-end">
-                  <h2 data-aos="fade-down" className="font-bold text-4xl my-5 secondColor">Categories</h2>
+                  <h2 data-aos="fade-down" className="font-bold text-4xl mb-5 secondColor">Categories</h2>
                   <div data-aos="fade-down" className="flex justify-start sm:justify-start md:justify-end flex-wrap">
                       <SimpleCategoryButton className="mr-3 mt-4" text={`Category`} />
                       <SimpleCategoryButton className="mr-3 mt-4" text={`Category`} />

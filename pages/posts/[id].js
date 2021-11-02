@@ -4,6 +4,17 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
+import { serialize } from 'next-mdx-remote/serialize'
+import { MDXRemote } from 'next-mdx-remote'
+import {Heading} from "../../components/mdx/Headings/heading";
+import {Paragraph} from "../../components/mdx/Headings/paragraph";
+import {List} from "../../components/mdx/Headings/list";
+
+const components = {
+  h1: (props) => <Heading {...props} variant="h3" />,
+  p: (props) => <Paragraph {...props} />,
+  ul: (props) => <List {...props} />
+}
 
 export default function Post({ postData }) {
   return (
@@ -12,10 +23,8 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <MDXRemote {...postData.content} components={components}>
+        </MDXRemote>
       </article>
     </Layout>
   )
@@ -31,9 +40,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
+  postData.content = await serialize(postData.content)
+
   return {
     props: {
-      postData
+      postData,
     }
   }
 }

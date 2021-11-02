@@ -29,7 +29,7 @@ export default function Layout({ children, home, className, postData }) {
                   <meta name="og:title" content={siteTitle} />
                   <meta name="twitter:card" content="summary_large_image" />
               </Head>
-              <header className={styles.header}>
+              <header className={classNames(styles.header, "mb-5")}>
                   <Front home={home} postData={postData} />
               </header>
               <main>{children}</main>

@@ -5,7 +5,6 @@ import classNames from "classnames";
 import {AnimatedVariantButton} from "../buttons/animatedVariantButton";
 
 export default function Front({home, postData}) {
-    console.log(postData)
     const title = home ? "Hey, my name is Mateusz and I work as a Software Engineer, it's my job and passion" : postData?.title;
     const height = home ? "100vh" : "500px";
     const margin = home ? "mb-40" : "mb-20";
